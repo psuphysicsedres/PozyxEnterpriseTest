@@ -27,6 +27,10 @@ def on_connect(client, userdata, flags, rc):
 
 # callback triggered by a new Pozyx data packet
 def on_message(client, userdata, msg):
+    ''' NOTE: errors/bugs here will fail silently, which is very bad.
+        You cannot call out or refer to functions, must be global variables,
+        I think.  Needs more investigation.
+    '''
     unixtime = time.time()
     #print("DEBUG: Positioning update:", msg.payload.decode() ) #DEBUG
     payload = msg.payload

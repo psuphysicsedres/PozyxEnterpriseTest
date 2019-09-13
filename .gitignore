@@ -2,3 +2,4 @@
 *.log
 *.txt
 secrets.py
+__pycache__/
