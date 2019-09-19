@@ -1,0 +1,7 @@
+id;x;y;z;ip;mac;chain info;neighbors;hardware;firmware;warnings;labels;in use
+40312;9344;426;1976;10.0.0.12;7a:9d:14:72:2f:0c;Chain 2, Hop 1;5;1.2;1.0.0-fe4d8bd;;;true
+12509;5553;466;1396;10.0.0.13;de:30:a1:e6:70:17;Chain 2, Hop 2;5;1.2;1.0.0-fe4d8bd;;A5;true
+52813;1301;335;2141;10.0.0.14;4e:ce:85:9a:19:a3;Chain 2, Hop 3;5;1.2;1.0.0-fe4d8bd;;A6;true
+64449;8730;9512;701;10.0.0.9;c2:fb:e6:64:d0:b1;Chain 1, Hop 1;5;1.2;1.0.0-fe4d8bd;;A1;true
+50356;4773;9659;1938;10.0.0.11;b6:c4:ce:a2:22:1a;Chain 1, Hop 2;5;1.2;1.0.0-fe4d8bd;;A2;true
+33186;714;9602;1704;10.0.0.10;a2:81:ed:87:fe:96;Chain 1, Hop 3;5;1.2;1.0.0-fe4d8bd;;A3;true
