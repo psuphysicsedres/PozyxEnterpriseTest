@@ -14,9 +14,21 @@ probably not necessary for the success of the project
 tag 0x67d/26477/amy: ()m
 tag 0x6a47/27207/brian: ()m
 
+## New Z-coords for anchors
+64449: z=0.738 m
+50356: z=2.049 m
+33186: z=1.724 m
+52813: z=2.063 m
+12503: z=1.372 m
+40312: z=2.024 m
+NOTE: These are just for reference.  All previous data from 2019-09-17 through
+to today are were taken with other anchor coordinates as recorded in the anchor
+configuration backup files.
+
 ## Enterprise Testing SRTC 113 2019-09-19T12:40
 tag 0x67d/26477/amy: (5.525,7.352,2.449)m
 tag 0x6a47/27207/brian: (8.294,7.433,2.330)m
+
 
 ## Enterprise Testing SRTC 113 2019-09-19T12:25
 tag 0x67d/26477/amy: (2.383,6.826,2.567)m
