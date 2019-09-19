@@ -2,7 +2,6 @@ import paho.mqtt.client as mqtt
 import ssl
 import json
 import time
-import secrets.py
 
 ###### Configuration ##########
 # Pick Local our Cloud Access #
@@ -14,12 +13,14 @@ import secrets.py
 #topic = "tags" 
 #
 # Via "Cloud" stream
-#host = "mqtt.cloud.pozyxlabs.com"
+host = "mqtt.cloud.pozyxlabs.com"
 fp = open("secrets.json")
 dataDict = json.load(fp)
 port = dataDict["port"]
-username = dataDict["topic"]
-password = dataDict["apikey"]
+topic = dataDict["topic"]
+username=topic
+apikey = dataDict["apikey"]
+password=apikey
 #### End Configuration #######
 
 def on_connect(client, userdata, flags, rc):
