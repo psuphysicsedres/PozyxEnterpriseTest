@@ -12,6 +12,9 @@ probably not necessary for the success of the project
 
 # Completed Tasks / Diary
 ## Enterprise Testing SRTC 113 2019-09-19
+room size: (10.324,9.813,3.556) m
+tag 0x67d/26477/amy: (2.442,6.970,2.790) m
+tag 0x6a47/27207/brian: (4.668,4.819,2.766) m
 
 ## Enterprise Testing SRTC 113 2019-09-17
 tag location: approximately the same as 2019-09-12
