@@ -11,6 +11,13 @@ separate section, not just in the callback function.  Although, this is
 probably not necessary for the success of the project
 
 # Completed Tasks / Diary
+## Enterprise Testing SRTC 113 2019-09-19
+
+## Enterprise Testing SRTC 113 2019-09-17
+tag location: approximately the same as 2019-09-12
+
+## try1.py Fix output data type integer for position values
+
 ## Enterprise Testing SRTC 113 2019-09-12
 tag 1: (7.496,5.28,2.764) m
 tag 2: tag 1 + (0.020 , 0,0) m
