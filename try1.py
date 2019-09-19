@@ -62,7 +62,7 @@ def on_message(client, userdata, msg):
             y = coordinates['y']
             z = coordinates['z']
             #print("DEBUG: %d" % (blinkindex)) #DEBUG
-            print("%f,%d,%d,%f,%f,%f" % (unixtime, tagid, blinkindex,x,y,z))
+            print("%f,%d,%d,%d,%d,%d" % (unixtime, tagid, blinkindex,x,y,z))
         else :
             print("ERROR: tag error:", tag["errorCode"])
     #print("type:", type(datastore)) #DEBUG
