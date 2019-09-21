@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import ssl
 import json
 import time
+import sys
 
 ###### Configuration ##########
 # Pick Local our Cloud Access #
@@ -21,10 +22,14 @@ topic = dataDict["topic"]
 username=topic
 apikey = dataDict["apikey"]
 password=apikey
+#
+# Output Format
+fmt = "%f,%d,%d,%d,%d,%d"
+hdr = "unixtime,tagID,blinkIndex,x,y,z"
 #### End Configuration #######
 
 def on_connect(client, userdata, flags, rc):
-    print(mqtt.connack_string(rc))
+    print(sys.stderr, "DEBUG:" + mqtt.connack_string(rc)) #DEBUG
 
 # callback triggered by a new Pozyx data packet
 def on_message(client, userdata, msg):
@@ -62,7 +67,8 @@ def on_message(client, userdata, msg):
             y = coordinates['y']
             z = coordinates['z']
             #print("DEBUG: %d" % (blinkindex)) #DEBUG
-            print("%f,%d,%d,%d,%d,%d" % (unixtime, tagid, blinkindex,x,y,z))
+            # hdr = "unixtime,tagID,blinkIndex,x,y,z"
+            print(fmt % (unixtime, tagid, blinkindex,x,y,z))
         else :
             print("ERROR: tag error:", tag["errorCode"])
     #print("type:", type(datastore)) #DEBUG
@@ -92,4 +98,5 @@ client.connect(host, port=port)
 client.subscribe(topic)
 
 # works blocking, other, non-blocking, clients are available too.
+print(hdr) # print CSV header before starting loop
 client.loop_forever()
