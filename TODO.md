@@ -49,8 +49,8 @@ requires changing teach tag configuration to match the "Controller".
 ## try1.py Fix output data type integer for position values
 
 ## Enterprise Testing SRTC 113 2019-09-12 High-Speed/Low-Accuracy Settings
-tag 1: (7.496,5.28,2.764) m
-tag 2: tag 1 + (0.020 , 0,0) m
+tag 1 26477: (7.496,5.28,2.764) m
+tag 2 27207: tag 1 + (0.020 , 0,0) m
 First Light!
 We had to use the High-Speed/Low-Accuracy settings, because we couldn't get it
 to work on the Low-Speed/High-Accuracy settings.
