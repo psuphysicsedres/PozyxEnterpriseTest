@@ -3,8 +3,6 @@
 ## Header
 Produce a header for CSV file so it is easier to work with.
 
-## put all other output on STDERR
-
 ## Make better
 This code really should write to a file and the parsing should be put in a
 separate section, not just in the callback function.  Although, this is

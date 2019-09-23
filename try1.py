@@ -34,7 +34,7 @@ def on_connect(client, userdata, flags, rc):
 # callback triggered by a new Pozyx data packet
 def on_message(client, userdata, msg):
     ''' NOTE: errors/bugs here will fail silently, which is very bad.
-        You cannot call out or refer to functions, must be global variables,
+        You cannot call out or refer to functions; must use global variables,
         I think.  Needs more investigation.
     '''
     unixtime = time.time()
@@ -75,7 +75,7 @@ def on_message(client, userdata, msg):
     #print("Number of tags:", len(tagLst) )
 
 def on_subscribe(client, userdata, mid, granted_qos):
-    print("Subscribed to topic!")
+    print(sys.stderr,"DEBUG: Subscribed to topic!")
 
 
 # Pick Local our Cloud Access  ######
