@@ -12,6 +12,19 @@ probably not necessary for the success of the project
 tag 0x67d/26477/amy: ()m
 tag 0x6a47/27207/brian: ()m
 
+## 2019-09-26 Trying to Map Room SRTC 113
+All of today's data was taken with the room in the same configruation
+as previous testing.
+Low-speed/Low-range preset anchor/tag settings
+But, I bumped up the data rate on both tags from the default of 1 Hz to 5 Hz.
+These settings are:
+TDOA
+Power: 20.0 dB
+Channel 5
+Bitrate: 110
+Preamble Length: 1024
+PRF 64
+
 ## New Z-coords for anchors
 64449: z=0.738 m
 50356: z=2.049 m
