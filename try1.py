@@ -29,7 +29,7 @@ hdr = "unixtime,tagID,blinkIndex,x,y,z"
 #### End Configuration #######
 
 def on_connect(client, userdata, flags, rc):
-    print(sys.stderr, "DEBUG:" + mqtt.connack_string(rc)) #DEBUG
+    print(sys.stderr, "DEBUG:" + mqtt.connack_string(rc), flush=True) #DEBUG
 
 # callback triggered by a new Pozyx data packet
 def on_message(client, userdata, msg):
@@ -73,9 +73,11 @@ def on_message(client, userdata, msg):
             print("ERROR: tag error:", tag["errorCode"])
     #print("type:", type(datastore)) #DEBUG
     #print("Number of tags:", len(tagLst) )
+    sys.stdout.flush()
+    sys.stderr.flush()
 
 def on_subscribe(client, userdata, mid, granted_qos):
-    print(sys.stderr,"DEBUG: Subscribed to topic!")
+    print(sys.stderr,"DEBUG: Subscribed to topic!", flush=True)
 
 
 # Pick Local our Cloud Access  ######
